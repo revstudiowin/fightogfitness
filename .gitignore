@@ -3,6 +3,7 @@ dist/
 *.log
 .codex/
 .agents/
+.vercel/
 .env
 .env.*
 !.env.example

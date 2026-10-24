@@ -12,6 +12,12 @@ node server.mjs --dist
 
 Preview: http://127.0.0.1:5173. Production output: `dist/`. Deploy this folder to any static host. No live website or public hosting configuration has been changed.
 
+## Deploy on Vercel
+
+Import `revstudiowin/fightogfitness` from GitHub and select the repository root (`.`). The committed `vercel.json` selects the **Other** framework preset, runs `npm run build`, and publishes `dist/`. Node 22 is selected by `package.json`. No environment variables or runtime server are required for this static frontend. Keep the build and output settings from the repository; `server.mjs` is only for local previews.
+
+The build verifies local page and content asset references before deployment. Consultation forms, booking and streamed member videos still use the original external services described below. Canonical and structured-data URLs continue to identify the original business domain; connect the intended production domain in Vercel when publishing the business site.
+
 ## Structure
 
 - `index.html`: semantic, server-readable homepage copy and verified SEO metadata/schema.
