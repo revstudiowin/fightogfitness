@@ -1,0 +1,12 @@
+{
+  "name": "fightogfitness",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node build.mjs",
+    "test": "node --test",
+    "check": "node --check src/main.js && node --check src/analytics.js && node --check src/motion.js && node --check src/athlete.js"
+  }
+}

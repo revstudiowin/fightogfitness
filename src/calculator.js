@@ -1,0 +1,2 @@
+export function trainingTime(hours){const value=Number(hours);if(!Number.isFinite(value)||value<0||value>12)throw new RangeError('Hours must be between 0 and 12');const currentMinutes=Math.round(value*60),plannedMinutes=135;return{currentMinutes,plannedMinutes,difference:currentMinutes-plannedMinutes,fourWeekDifference:(currentMinutes-plannedMinutes)*4}}
+export function durationLabel(minutes){minutes=Math.abs(minutes);const h=Math.floor(minutes/60),m=minutes%60;return [h?`${h} ${h===1?'time':'timer'}`:'',m?`${m} min`:''].filter(Boolean).join(' ')||'0 min'}
